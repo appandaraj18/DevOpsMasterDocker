@@ -13,8 +13,8 @@ wordpress_db:
 phpmyadmin:                
         image: corbinu/docker-phpmyadmin
         environment:
-                MYSQL_USERNAME: root
-                MYSQL_ROOT_PASSWORD: test
+                MYSQL_USERNAME: mysql
+                MYSQL_ROOT_PASSWORD: password
         links:
                 - wordpress_db:mysql
         ports:
